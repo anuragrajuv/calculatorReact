@@ -1,46 +1,85 @@
-# Getting Started with Create React App and Redux
+# Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is a simple calculator application built using React and Redux Toolkit. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The app is styled with CSS and uses Redux for state management.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Perform basic arithmetic operations: addition, subtraction, multiplication, and division.
+- Clear the current input or reset the calculator.
+- Toggle between positive and negative numbers.
+- Convert numbers to percentages.
+- Supports decimal inputs.
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project is organized as follows:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+calculator/
+  public/          # Static files
+  src/
+    app/          # Redux store configuration
+    features/     # Feature-specific components and slices
+      Calculator/ # Calculator component and Redux slice
+    index.js      # Entry point of the application
+    App.js        # Main application component
+```
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (v14 or later)
+- npm (v6 or later)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anuragrajuv/calculatorReact.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
+   ```bash
+   cd calculator
+   ```
 
-### `npm run eject`
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running the App
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To start the development server, run:
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running Tests
+
+To run the test suite, use:
+```bash
+npm test
+```
+
+### Building for Production
+
+To create a production build, run:
+```bash
+npm run build
+```
+
+The build artifacts will be stored in the `build/` directory.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React Documentation](https://reactjs.org/)
+- [Redux Toolkit Documentation](https://redux-toolkit.js.org/)
+- [Create React App Documentation](https://create-react-app.dev/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This project is licensed under the MIT License.
